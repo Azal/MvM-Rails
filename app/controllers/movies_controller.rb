@@ -6,10 +6,14 @@ class MoviesController < ApplicationController
 
   end
 
-  def show
-    @search = params[:search]
-    @movies = Movie.all().to_a.pop(10)
-    #@movies = Movie.all(conditions: { :RatingIMDB => /#{search}/ }).to_a
+  def search
+    search = params[:search]
+    type = params[:type]
+    genre = params[:genre]
+    #regex para case insensitive y like
+    @movies = Movie.all(conditions: { type.to_s => /#{search}/i,
+                                      :Genres => /#{genre}/i} ).to_a
+
 
   end
 

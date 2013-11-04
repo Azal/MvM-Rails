@@ -56,7 +56,7 @@ MvM::Application.routes.draw do
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
 
-  match 'index', to: 'movies#index', via: :get
-  match 'show/:search', to: 'movies#show', via: :post
-  get 'detail/:id', to: 'movies#detail'
+  get 'movies', to: 'movies#index'
+  get 'movies/search/', to: 'movies#search'
+  get 'movies/search/detail/:id', to: 'movies#detail'
 end

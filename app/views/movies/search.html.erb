@@ -1,0 +1,7 @@
+<div class="movies-display">
+  <div class="movie-search">
+    <% @movies.each do |movie| %>
+        <%= link_to movie[:Title], :action => 'detail', :id => movie[:_id] %><br>
+    <% end %>
+  </div>
+</div>

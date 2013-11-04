@@ -10,11 +10,36 @@
 
 <body>
     <div>
-        <%= form_tag({:controller => 'movies', :action => 'show', :search => ''},
-                     {:id => 'form_search'}) do %>
+        <%= form_tag({:controller => 'movies', :action => 'search'},
+                     {:id => 'form_search', :method => :get}) do %>
             <input type="text" class="search-bar" placeholder="Search your Movie" name="search">
+            <select name="type">
+              <option value="Title">Movie</option>
+              <option value="Cast">Actor</option>
+            </select>
+            <select name="genre">
+              <option value="All">All</option>
+              <option value="Action">Action</option>
+              <option value="Adventure">Adventure</option>
+              <option value="Action">Animation</option>
+              <option value="Adventure">Biography</option>
+              <option value="Action">Comedy</option>
+              <option value="Adventure">Crime</option>
+              <option value="Action">Documentary</option>
+              <option value="Adventure">Drama</option>
+              <option value="Adventure">Fantasy</option>
+              <option value="Adventure">History</option>
+              <option value="Action">Horror</option>
+              <option value="Adventure">Mystery</option>
+              <option value="Action">Romance</option>
+              <option value="Adventure">Sci-Fi</option>
+              <option value="Adventure">Thriller</option>
+              <option value="Action">War</option>
+              <option value="Adventure">Western</option>
+            </select>
          <% end %>
     </div>
+
     <%= yield %>
 </body>
 </html>

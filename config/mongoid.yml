@@ -1,5 +1,5 @@
 development:
-  host: arqui1.ing.puc.cl
+  host: arqui5.ing.puc.cl
   port: 27017
   database: MovieManiacs
 

@@ -6,13 +6,14 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/mongoid.yml" changelist="fefdc1a2-be82-4ff2-be38-fd845fca262d" time="1383464490340" ignored="false" />
     <file path="/Movie.rb" changelist="fefdc1a2-be82-4ff2-be38-fd845fca262d" time="1383496922712" ignored="false" />
-    <file path="/movies_controller.rb" changelist="fefdc1a2-be82-4ff2-be38-fd845fca262d" time="1383505557533" ignored="false" />
-    <file path="/routes.rb" changelist="fefdc1a2-be82-4ff2-be38-fd845fca262d" time="1383501618595" ignored="false" />
-    <file path="/application.html.erb" changelist="fefdc1a2-be82-4ff2-be38-fd845fca262d" time="1383504409526" ignored="false" />
+    <file path="/movies_controller.rb" changelist="fefdc1a2-be82-4ff2-be38-fd845fca262d" time="1383539052160" ignored="false" />
+    <file path="/routes.rb" changelist="fefdc1a2-be82-4ff2-be38-fd845fca262d" time="1383533894502" ignored="false" />
+    <file path="/application.html.erb" changelist="fefdc1a2-be82-4ff2-be38-fd845fca262d" time="1383538792415" ignored="false" />
     <file path="/movies.css.scss" changelist="fefdc1a2-be82-4ff2-be38-fd845fca262d" time="1383505610629" ignored="false" />
-    <file path="/show.html.erb" changelist="fefdc1a2-be82-4ff2-be38-fd845fca262d" time="1383501372486" ignored="false" />
+    <file path="/show.html.erb" changelist="fefdc1a2-be82-4ff2-be38-fd845fca262d" time="1383532425039" ignored="false" />
     <file path="/application.js" changelist="fefdc1a2-be82-4ff2-be38-fd845fca262d" time="1383504983804" ignored="false" />
-    <file path="/detail.html.erb" changelist="fefdc1a2-be82-4ff2-be38-fd845fca262d" time="1383505664801" ignored="false" />
+    <file path="/detail.html.erb" changelist="fefdc1a2-be82-4ff2-be38-fd845fca262d" time="1383532369815" ignored="false" />
+    <file path="/search.html.erb" changelist="fefdc1a2-be82-4ff2-be38-fd845fca262d" time="1383533102337" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,24 +32,33 @@
     <favorites_list name="MvM" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.52">
+    <splitter split-orientation="vertical" split-proportion="0.47226173">
       <split-first>
-        <splitter split-orientation="horizontal" split-proportion="0.57768923">
+        <splitter split-orientation="horizontal" split-proportion="0.5776892">
           <split-first>
             <leaf>
               <file leaf-file-name="Movie.rb" pinned="false" current="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/app/models/Movie.rb">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="5" column="0" selection-start="91" selection-end="91" vertical-scroll-proportion="-55.0">
+                    <state line="5" column="0" selection-start="91" selection-end="91" vertical-scroll-proportion="0.0">
                       <folding />
                     </state>
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="movies_controller.rb" pinned="false" current="false" current-in-tab="true">
+              <file leaf-file-name="movies_controller.rb" pinned="false" current="true" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/app/controllers/movies_controller.rb">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="16" column="37" selection-start="308" selection-end="308" vertical-scroll-proportion="0.25182483">
+                    <state line="15" column="0" selection-start="364" selection-end="364" vertical-scroll-proportion="0.46341464">
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="search.html.erb" pinned="false" current="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/app/views/movies/search.html.erb">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state line="6" column="79" selection-start="203" selection-end="203" vertical-scroll-proportion="0.0">
                       <folding />
                     </state>
                   </provider>
@@ -58,10 +68,37 @@
           </split-first>
           <split-second>
             <leaf>
-              <file leaf-file-name="movies.css.scss" pinned="false" current="false" current-in-tab="true">
+              <file leaf-file-name="movies.css.scss" pinned="false" current="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/movies.css.scss">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="6" column="21" selection-start="213" selection-end="213" vertical-scroll-proportion="0.50574714">
+                    <state line="6" column="21" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0">
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="movies.js" pinned="false" current="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/app/assets/javascripts/movies.js">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="application.js" pinned="false" current="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state line="3" column="41" selection-start="35" selection-end="35" vertical-scroll-proportion="0.2682927">
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="application.css" pinned="false" current="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state line="13" column="18" selection-start="546" selection-end="546" vertical-scroll-proportion="0.0">
                       <folding />
                     </state>
                   </provider>
@@ -73,10 +110,19 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="17" column="16" selection-start="584" selection-end="584" vertical-scroll-proportion="-5.483871">
+                <state line="17" column="33" selection-start="659" selection-end="659" vertical-scroll-proportion="0.09053498">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="detail.html.erb" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/views/movies/detail.html.erb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="3" column="42" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -85,27 +131,7 @@
           <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/config/routes.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="60" column="66" selection-start="1923" selection-end="1923" vertical-scroll-proportion="0.0">
-                  <folding>
-                    <element signature="e#29#1927#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/views/movies/show.html.erb">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="3" column="37" selection-start="115" selection-end="115" vertical-scroll-proportion="-2.1290324">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="detail.html.erb" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app/views/movies/detail.html.erb">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="3" column="11" selection-start="93" selection-end="93" vertical-scroll-proportion="0.3084112">
+                <state line="59" column="21" selection-start="1839" selection-end="1839" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -125,16 +151,17 @@
       <list>
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/application.rb" />
-        <option value="$PROJECT_DIR$/config/mongoid.yml" />
         <option value="$PROJECT_DIR$/app/views/movies/index.html.erb" />
         <option value="$PROJECT_DIR$/app/models/Movie.rb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/movies.css.scss" />
+        <option value="$PROJECT_DIR$/config/mongoid.yml" />
+        <option value="$PROJECT_DIR$/app/views/movies/detail.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/movies/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/movies/search.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-        <option value="$PROJECT_DIR$/app/views/movies/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/movies_controller.rb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/movies.css.scss" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/movies/detail.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/movies_controller.rb" />
       </list>
     </option>
   </component>
@@ -177,6 +204,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="RailsProjectView" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -368,18 +396,17 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
-    <property name="Ruby.ViewRefParam.DefaultExtension" value="html.erb" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="Ruby.ViewRefParam.DefaultExtension" value="html.erb" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -496,7 +523,7 @@
     </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Remote" singleton="true">
       <JSRemoteDebuggerConfigurationSettings>
-        <option name="engineId" />
+        <option name="engineId" value="embedded" />
         <option name="fileUrl" />
       </JSRemoteDebuggerConfigurationSettings>
       <method />
@@ -599,6 +626,23 @@
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="fefdc1a2-be82-4ff2-be38-fd845fca262d" name="Default" comment="" />
@@ -615,16 +659,16 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973147" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19119227" sideWeight="0.664437" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15145005" sideWeight="0.664437" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33556297" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32887402" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21627648" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998884" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -689,124 +733,106 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="13" />
+      <option name="time" value="25" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="0" selection-start="1834" selection-end="1834" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#29#1927#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="22" selection-start="209" selection-end="209" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/application.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="39" selection-start="660" selection-end="660" vertical-scroll-proportion="1.76">
-          <folding />
-        </state>
+        <state line="20" column="39" selection-start="660" selection-end="660" vertical-scroll-proportion="1.76" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/mongoid.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="25" selection-start="38" selection-end="38" vertical-scroll-proportion="0.07236842">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/bootstrap.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="34" selection-start="282" selection-end="282" vertical-scroll-proportion="0.50825083">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Movie.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="91" selection-end="91" vertical-scroll-proportion="-55.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/movies_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="37" selection-start="308" selection-end="308" vertical-scroll-proportion="0.25182483">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/movies.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="21" selection-start="213" selection-end="213" vertical-scroll-proportion="0.50574714">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="66" selection-start="1923" selection-end="1923" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#29#1927#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/movies/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+    <entry file="file://$PROJECT_DIR$/config/mongoid.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="16" selection-start="584" selection-end="584" vertical-scroll-proportion="-5.483871">
-          <folding />
-        </state>
+        <state line="1" column="14" selection-start="27" selection-end="27" vertical-scroll-proportion="0.074324325" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/movies/show.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/models/Movie.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="37" selection-start="115" selection-end="115" vertical-scroll-proportion="-2.1290324">
+        <state line="5" column="0" selection-start="91" selection-end="91" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/movies/detail.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="11" selection-start="93" selection-end="93" vertical-scroll-proportion="0.3084112">
+        <state line="3" column="42" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/movies/search.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="79" selection-start="203" selection-end="203" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/movies.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="21" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/movies.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="21" selection-start="1839" selection-end="1839" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="18" selection-start="546" selection-end="546" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="33" selection-start="659" selection-end="659" vertical-scroll-proportion="0.09053498">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="41" selection-start="35" selection-end="35" vertical-scroll-proportion="0.2682927">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/movies_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="364" selection-end="364" vertical-scroll-proportion="0.46341464">
           <folding />
         </state>
       </provider>
