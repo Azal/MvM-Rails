@@ -11,3 +11,86 @@
  *= require_self
  *= require_tree .
  */
+ 
+body {
+    background-color: #333333;
+}
+
+.no-padding {
+    clear: left;
+    margin: 0px;
+    padding: 0 0 0 5px;
+}
+
+.pagination {
+    clear: left;
+    margin: 0px;
+    padding: 0 0 0 5px;
+}
+
+.browse-wrapper {
+    width: 297px;
+    float: left;
+    padding: 0 5px;
+    margin: 0 0px 10px 0;
+}
+
+.browse-content {
+    border-right: 1px solid #bebebe;
+    float: left;
+    padding-right: 10px;
+}
+
+.browse {
+margin-left: 20px;
+float: left;
+}
+
+.full-width {
+width: 1000px;
+background: #f9f9f9;
+float: left;
+padding: 5px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+}
+
+.content {
+width: 950px;
+margin: 0 auto;
+margin-top: 20px;
+z-index: 10;
+position: relative;
+}
+
+.browse-img {
+float: left;
+width: 120px;
+height: 192px;
+margin-right: 8px;
+}
+
+.browse-info {
+float: left;
+width: 155px;
+position: relative;
+}
+
+.info {
+display: block;
+height: 148px;
+}
+
+.info .browseTitleLink {
+font-size: 13px;
+text-shadow: 0 1px 1px #b2b2b2;
+font-weight: bolder;
+display: inline-block;
+margin-bottom: 10px;
+}
+
+.hint {
+display: inline-block;
+}
+

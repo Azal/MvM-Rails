@@ -8,6 +8,8 @@ gem 'rails', '3.2.13'
 gem 'bson_ext', '1.6.0'
 gem 'mongo', '1.6.0'
 gem 'mongoid', '2.4.6'
+gem 'kaminari'
+gem 'bootstrap-kaminari-views'
 
 # Gems used only for assets and not required
 # in production environments by default.

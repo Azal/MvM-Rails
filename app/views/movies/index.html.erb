@@ -1,0 +1,40 @@
+<div class = "content">
+    <div class = "full-width">
+        <div class="browse">
+            <% if @movies.any? %>
+                <%= paginate @movies, :theme => 'twitter-bootstrap', :window => 1, :outer_window => 1, :param_name => "movie_page"%>
+                <% count = 3 %>
+                <% for movie in @movies %>
+                    <% if count == 3 %>
+                        <div class="browse-wrapper no-padding">
+                    <% else %>
+                        <div class="browse-wrapper">
+                    <% end %>
+                        <div class="browse-content">
+                            <div class="browse-img">
+                                <%= link_to image_tag(movie.image), movie, :title => movie.actor, :class => "hint" %>
+                            </div>
+                            <div class="browse-info">
+							<span class="info">
+								<span class="browseTitleLink"><%= link_to movie.title + " (" + (movie.year).to_s + ")" , movie %></span><br>
+								<span class="browseInfoList"><b>Size:</b> 694.38 MB</span><br>
+								<span class="browseInfoList"><b>Quality:</b> 720p</span><br>
+								<span class="browseInfoList"><b>Genre:</b> Horror | Thriller</span><br>
+								<span class="browseInfoList"><b>IMDB Rating:</b> 6.1/10</span><br>								
+							</span>
+                            </div>
+                        </div>
+                    </div>
+                    <% count = count - 1%>
+                    <% if count == 0%>
+                        <% count = 3 %>
+                    <% end %>
+                <% end %>
+                <br>
+                <%= paginate @movies, :theme => 'twitter-bootstrap', :window => 1, :outer_window => 1, :param_name => "movie_page"%>
+            <% else %>
+                  <p>There are no movies.</p>
+            <% end %>
+        </div>
+    </div>
+</div>
