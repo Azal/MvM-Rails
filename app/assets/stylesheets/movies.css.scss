@@ -1,12 +1,44 @@
 // Place all the styles related to the movies controller here.
-// They will automatically be included in application.css.
+// They will automatically be included in application.css.scss.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.search-bar
+.movie-search
 {
-  position: relative;
-  top: 20px;
-  width: 600px;
-  margin-left: -300px;
+  position: absolute;
   left: 50%;
+  margin-left: -600px;
+  width: 1200px;
+  background: #f9f9f9;
+  padding: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+
+  table{
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    th{
+      font-size: 16px;
+      border: 2px solid #ffffff;
+      background-color: #599561;
+    }
+
+    td{
+      border: 2px solid white;
+    }
+    td:nth-child(4), td:nth-child(5) {
+       color: firebrick;
+       font-weight: bold;
+    }
+    td:nth-child(1){
+      font-weight: bold;
+    }
+    tr:hover{
+      background-color: #1fff33;
+    }
+    tr:first-child:hover{
+      background-color: transparent;
+    }
+  }
 }

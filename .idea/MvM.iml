@@ -23,6 +23,7 @@
     <orderEntry type="library" scope="PROVIDED" name="activeresource (v3.2.13, ruby-1.9.3-p392) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activesupport (v3.2.13, ruby-1.9.3-p392) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="arel (v3.0.2, ruby-1.9.3-p392) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bootstrap-kaminari-views (v0.0.2, ruby-1.9.3-p392) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bson (v1.6.0, ruby-1.9.3-p392) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bson_ext (v1.6.0, ruby-1.9.3-p392) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="builder (v3.0.4, ruby-1.9.3-p392) [gem]" level="application" />
@@ -37,6 +38,7 @@
     <orderEntry type="library" scope="PROVIDED" name="journey (v1.0.4, ruby-1.9.3-p392) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jquery-rails (v3.0.4, ruby-1.9.3-p392) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="json (v1.8.1, ruby-1.9.3-p392) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="kaminari (v0.14.1, ruby-1.9.3-p392) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mail (v2.5.4, ruby-1.9.3-p392) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mime-types (v1.25, ruby-1.9.3-p392) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mongo (v1.6.0, ruby-1.9.3-p392) [gem]" level="application" />
@@ -57,6 +59,7 @@
     <orderEntry type="library" scope="PROVIDED" name="thor (v0.18.1, ruby-1.9.3-p392) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tilt (v1.4.1, ruby-1.9.3-p392) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="treetop (v1.4.15, ruby-1.9.3-p392) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="twitter-bootstrap-rails (v2.2.8, ruby-1.9.3-p392) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tzinfo (v0.3.38, ruby-1.9.3-p392) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="uglifier (v2.3.0, ruby-1.9.3-p392) [gem]" level="application" />
   </component>

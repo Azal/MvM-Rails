@@ -1,7 +1,20 @@
-<div class="movies-display">
   <div class="movie-search">
-    <% @movies.each do |movie| %>
-        <%= link_to movie[:Title], :action => 'detail', :id => movie[:_id] %><br>
-    <% end %>
+    <table>
+      <tr>
+        <th> Title </th>
+        <th> Genres </th>
+        <th> From </th>
+        <th> IMDB </th>
+        <th> Rotten </th>
+      </tr>
+      <% @movies.each do |movie| %>
+          <tr>
+            <td><%= link_to movie[:Title], :action => 'detail', :id => movie[:_id] %></td>
+            <td><%= movie[:Genres].to_sentence %></td>
+            <td><%= movie[:From] %></td>
+            <td><%= movie[:RatingIMDB] %></td>
+            <td><%= movie[:RatingRotten] %></td>
+          </tr>
+      <% end %>
+    </table>
   </div>
-</div>

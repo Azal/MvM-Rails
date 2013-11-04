@@ -9,37 +9,56 @@
 </head>
 
 <body>
-    <div>
+    <div class="search-form">
         <%= form_tag({:controller => 'movies', :action => 'search'},
                      {:id => 'form_search', :method => :get}) do %>
-            <input type="text" class="search-bar" placeholder="Search your Movie" name="search">
+            <input type="text" placeholder="Search your Movie" name="search">
             <select name="type">
               <option value="Title">Movie</option>
               <option value="Cast">Actor</option>
             </select>
             <select name="genre">
-              <option value="All">All</option>
+              <option value="">All</option>
               <option value="Action">Action</option>
               <option value="Adventure">Adventure</option>
-              <option value="Action">Animation</option>
-              <option value="Adventure">Biography</option>
-              <option value="Action">Comedy</option>
-              <option value="Adventure">Crime</option>
-              <option value="Action">Documentary</option>
-              <option value="Adventure">Drama</option>
-              <option value="Adventure">Fantasy</option>
-              <option value="Adventure">History</option>
-              <option value="Action">Horror</option>
-              <option value="Adventure">Mystery</option>
-              <option value="Action">Romance</option>
-              <option value="Adventure">Sci-Fi</option>
-              <option value="Adventure">Thriller</option>
-              <option value="Action">War</option>
-              <option value="Adventure">Western</option>
+              <option value="Animation">Animation</option>
+              <option value="Biography">Biography</option>
+              <option value="Comedy">Comedy</option>
+              <option value="Crime">Crime</option>
+              <option value="Documentary">Documentary</option>
+              <option value="Drama">Drama</option>
+              <option value="Fantasy">Fantasy</option>
+              <option value="History">History</option>
+              <option value="Horror">Horror</option>
+              <option value="Mystery">Mystery</option>
+              <option value="Romance">Romance</option>
+              <option value="Sci-Fi">Sci-Fi</option>
+              <option value="Thriller">Thriller</option>
+              <option value="War">War</option>
+              <option value="Western">Western</option>
             </select>
          <% end %>
     </div>
+    <div class="logo1">
+      <%= image_tag 'logo1.png' %>
+    </div>
+    <div class="logo2">
+      <%= image_tag 'logo2.jpg' %>
+    </div>
+    <div class="side-menu">
+        <div class="server-stats">
+          <p>Server Stats:</p>
+          <span> <strong>IMDB:</strong> <%= @count_imdb %></span><br>
+          <span><strong>Rotten:</strong> <%= @count_rotten %></span><br>
+          <span><strong>Both:</strong> <%= @count_both %></span>
+        </div>
+      <hr>
+        <div class="bacon">
+          <p> Bacon: </p>
+        </div>
+    </div>
 
     <%= yield %>
+
 </body>
 </html>

@@ -1,0 +1,56 @@
+
+<div class = "content">
+    <div class = "full-width">
+        <div class="browse">
+            <% if @movies.any? %>
+                <%= paginate @movies, :theme => 'twitter-bootstrap', :window => 1, :outer_window => 1, :param_name => "movie_page"%>
+                <% count = 3 %>
+                <% for movie in @movies %>
+                    <% if count == 3 %>
+                        <div class="browse-wrapper no-padding">
+                    <% else %>
+                        <div class="browse-wrapper">
+                    <% end %>
+                        <div class="browse-content">
+                            <div class="browse-img">
+                                <% if movie[:From] == 'IMDB' %>
+                                    <%= link_to image_tag(movie[:ImageIMDB]),
+                                                'detail', :title => movie[:SynopsisIMDB].truncate(200, :omission => "... (continued)"),
+                                                :class => "hint" %>
+                                <% else %>
+                                    <%= link_to image_tag(movie[:ImageRotten]),
+                                                'detail', :title => movie[:SynopsisRotten].truncate(200, :omission => "... (continued)"),
+                                                :class => "hint" %>
+                                <% end %>
+                            </div>
+                            <div class="browse-info">
+							<span class="info">
+
+								<span class="browseTitleLink"><%= link_to movie[:Title] + " (" + (movie[:Year]).to_s + ")" , 'detail' %></span><br>
+								<span class="browseInfoList"><b>Genre:</b> <%=  movie[:Genres].to_sentence %></span><br>
+                              <% if movie[:From] == 'IMDB' %>
+								<span class="browseInfoList"><b>IMDB Rating:</b> <%=  movie[:RatingIMDB] %> </span>
+                              <% elsif movie[:From] == 'Rotten' %>
+                                <span class="browseInfoList"><b>Rotten Rating:</b> <%=  movie[:RatingRotten] %> </span><br>
+                              <% else %>
+                                <span class="browseInfoList"><b>IMDB Rating:</b> <%=  movie[:RatingIMDB] %> </span><br>
+                                <span class="browseInfoList"><b>Rotten Rating:</b> <%=  movie[:RatingRotten] %> </span>
+                              <% end %>
+							</span>
+                            </div>
+                        </div>
+                    </div>
+                    <% count = count - 1%>
+                    <% if count == 0%>
+                        <% count = 3 %>
+                    <% end %>
+                <% end %>
+                <br>
+                <%= paginate @movies, :theme => 'twitter-bootstrap', :window => 1, :outer_window => 1, :param_name => "movie_page"%>
+            <% else %>
+                  <p>There are no movies.</p>
+            <% end %>
+        </div>
+    </div>
+</div>
+</div>

@@ -47,8 +47,8 @@ MvM::Application.routes.draw do
   #   end
 
   # You can have the root of your site routed with "root"
-  # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+  # just remember to delete public/movies.html.
+  # root :to => 'welcome#movies'
 
   # See how all your routes lay out with "rake routes"
 
@@ -56,7 +56,7 @@ MvM::Application.routes.draw do
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
 
-  get 'movies', to: 'movies#index'
+  get 'movies', to: 'movies#movies'
   get 'movies/search/', to: 'movies#search'
   get 'movies/search/detail/:id', to: 'movies#detail'
 end

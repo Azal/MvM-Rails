@@ -10,10 +10,12 @@
  *
  *= require_self
  *= require_tree .
+ *= require bootstrap_and_overrides
  */
- 
+
 body {
-    background-color: #333333;
+
+    background-color: #333333 !important;
 }
 
 .no-padding {
@@ -54,6 +56,7 @@ padding: 5px;
 -webkit-border-radius: 5px;
 -moz-border-radius: 5px;
 border-radius: 5px;
+border: 2px solid green;
 }
 
 .content {
@@ -75,6 +78,10 @@ margin-right: 8px;
 float: left;
 width: 155px;
 position: relative;
+  b{
+    color: firebrick;
+  }
+
 }
 
 .info {
@@ -92,5 +99,62 @@ margin-bottom: 10px;
 
 .hint {
 display: inline-block;
+}
+div[class="tooltip-inner"] {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 4px;
+  margin-bottom: 6px;
+  background-color: #050505;
+  font-size: 16px;
+}
+
+.search-form{
+  position: relative;
+  top: 20px;
+  width: 800px;
+  margin-left: -400px;
+  left: 50%;
+  input{
+    width: 600px;
+  }
+  select{
+    width: 80px;
+  }
+}
+.side-menu{
+  background: #f9f9f9;
+  padding: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  width: 200px;
+  height: 500px;
+  position: absolute;
+  top: 120px;
+  left: 30px;
+  border: 2px solid green;
+  p{
+    font-family: impact;
+    font-size: 16px;
+    }
+  strong{
+    color: blue;
+  }
+}
+.logo1{
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 300px;
+  height: 50px;
+}
+
+.logo2{
+  position: absolute;
+  top: 650px;
+  left: 90px;
+  width: 70px;
+  height: 70px;
 }
 

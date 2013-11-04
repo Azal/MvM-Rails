@@ -10,6 +10,8 @@ gem 'mongo', '1.6.0'
 gem 'mongoid', '2.4.6'
 gem 'kaminari'
 gem 'bootstrap-kaminari-views'
+gem 'twitter-bootstrap-rails'
+
 
 # Gems used only for assets and not required
 # in production environments by default.
