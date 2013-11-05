@@ -12,10 +12,6 @@ gem 'kaminari'
 gem 'bootstrap-kaminari-views'
 gem 'twitter-bootstrap-rails'
 
-# Supuesto arreglo para error JavaScript runtime
-
-gem "execjs"
-gem "therubyracer"
 
 
 # Gems used only for assets and not required
