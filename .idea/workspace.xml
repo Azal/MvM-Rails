@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fefdc1a2-be82-4ff2-be38-fd845fca262d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
     </list>
     <ignored path="MvM.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -22,6 +22,7 @@
     <file path="/application.css" changelist="fefdc1a2-be82-4ff2-be38-fd845fca262d" time="1383550914528" ignored="false" />
     <file path="/application.css.scss" changelist="fefdc1a2-be82-4ff2-be38-fd845fca262d" time="1383558844616" ignored="false" />
     <file path="/production.rb" changelist="fefdc1a2-be82-4ff2-be38-fd845fca262d" time="1383612853753" ignored="false" />
+    <file path="/Gemfile" changelist="fefdc1a2-be82-4ff2-be38-fd845fca262d" time="1383613076028" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,10 +60,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="29" selection-start="285" selection-end="285" vertical-scroll-proportion="0.0">
+            <state line="17" column="26" selection-start="368" selection-end="368" vertical-scroll-proportion="0.32362822">
               <folding />
             </state>
           </provider>
@@ -77,10 +78,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="production.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="production.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="52" selection-start="533" selection-end="533" vertical-scroll-proportion="0.26651737">
+            <state line="14" column="52" selection-start="533" selection-end="533" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -108,7 +109,6 @@
         <option value="$PROJECT_DIR$/app/views/movies/show.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/movies/index.html.erb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/views/movies/detail.html.erb" />
         <option value="$PROJECT_DIR$/app/views/movies/search.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
@@ -120,6 +120,7 @@
         <option value="$PROJECT_DIR$/app/controllers/movies_controller.rb" />
         <option value="$PROJECT_DIR$/config/mongoid.yml" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
@@ -644,13 +645,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="29" selection-start="285" selection-end="285" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/mongoid.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="41" selection-start="282" selection-end="282" vertical-scroll-proportion="0.0">
@@ -660,7 +654,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="52" selection-start="533" selection-end="533" vertical-scroll-proportion="0.26651737">
+        <state line="14" column="52" selection-start="533" selection-end="533" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="26" selection-start="368" selection-end="368" vertical-scroll-proportion="0.32362822">
           <folding />
         </state>
       </provider>
