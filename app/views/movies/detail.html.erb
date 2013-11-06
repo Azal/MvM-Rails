@@ -1,6 +1,54 @@
-<div>
-    ID = <%= @movie[:_id] %> <br>
-    GENRES = <%= @movie[:Genres] %><br>
-    CAST = <%= @movie[:Cast] %><br>
 
+<div class = "content">
+  <div class = "full-width">
+    <div class="movie-detail">
+      <div class="header">
+         <h3> <%= "#{@movie[:Title]} (#{@movie[:Year]})" %> </h3>
+      </div>
+
+      <% if @movie[:From] == 'IMDB' %>
+        <%= image_tag(@movie[:ImageIMDB],:align => 'left') %>
+          <div class="movie-content">
+            <h5>Synopsis:</h5>
+            <p align="justify"><%= @movie[:SynopsisIMDB] %></p>
+            <p>
+                <Strong>Rating: <span style="color: red"> <%= @movie[:RatingIMDB] %></span></Strong>
+                <a class="link" href= <%= @movie[:UrlIMDB] %> ><%= image_tag('imdb.jpg' , width: 80, height: 80) %></a>
+            </p>
+          </div>
+      <% elsif @movie[:From] == 'Rotten' %>
+          <%= image_tag(@movie[:ImageRotten], :align => 'left') %>
+
+          <div class="movie-content">
+            <h5>Synopsis:</h5>
+            <p align="justify"><%= @movie[:SynopsisRotten] %></p>
+            <%= @movie[:RatingRotten] %>
+            <p>
+                <Strong>Rating: <span style="color: red"> <%= @movie[:RatingRotten] %></span></Strong>
+                <a class="link" href= <%= @movie[:UrlRotten] %> ><%= image_tag('rt.jpg', width: 80, height: 80) %></a>
+            </p>
+
+          </div>
+      <% else %>
+          <%= image_tag(@movie[:ImageIMDB], :align => 'left') %>
+
+          <div class="movie-content">
+            <h5>Synopsis:</h5>
+            <p align="justify"><%= @movie[:SynopsisRotten] %></p>
+            <%= @movie[:RatingRotten] %>
+            <p>
+              <Strong> Rotten: <span style="color: red"> <%= @movie[:RatingRotten] %></span></Strong>
+              <a class="link" href= <%= @movie[:UrlRotten] %> ><%= image_tag('rt.jpg', width: 80, height: 80) %></a>
+              <Strong> IMDB:<span style="color: red"> <%= @movie[:RatingIMDB] %></span></Strong>
+              <a class="link" href= <%= @movie[:UrlIMDB] %> ><%= image_tag('imdb.jpg' , width: 80, height: 80) %></a>
+            </p>
+
+          </div>
+      <% end %>
+      <div class="movie-footer">
+        <p align="justify"> <strong> Genres: </strong> <span style="font-style: italic"><%= @movie[:Genres].to_sentence %></span></p>
+        <p align="justify"><strong> Cast: </strong> <span style="font-style: italic"> <%= @movie[:Cast].to_sentence %> </span></p>
+      </div>
+    </div>
+  </div>
 </div>

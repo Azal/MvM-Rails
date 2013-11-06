@@ -40,7 +40,7 @@
          <% end %>
     </div>
     <div class="logo1">
-      <%= image_tag 'logo1.png' %>
+      <%= link_to image_tag('logo1.png'), action: 'movies' %>
     </div>
     <div class="logo2">
       <%= image_tag 'logo2.jpg' %>
@@ -50,11 +50,16 @@
           <p>Server Stats:</p>
           <span> <strong>IMDB:</strong> <%= @count_imdb %></span><br>
           <span><strong>Rotten:</strong> <%= @count_rotten %></span><br>
-          <span><strong>Both:</strong> <%= @count_both %></span>
+          <span><strong>Both:</strong> <%= @count_both %></span><br>
+          <span><strong>Total:</strong> <%= @count_both + @count_rotten + @count_imdb %></span>
         </div>
       <hr>
         <div class="bacon">
           <p> Bacon: </p>
+          <%= form_tag({:controller => 'movies', :action => 'bacon'}, remote: true, :method => :get) %>
+          <input type="text" placeholder="Actor 1" name="actor_1">
+          <input type="text" placeholder="Actor 2" name="actor_2">
+          <input type="submit" class=" btn-success">
         </div>
     </div>
 

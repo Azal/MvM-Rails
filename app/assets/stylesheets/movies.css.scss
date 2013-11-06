@@ -42,3 +42,30 @@
     }
   }
 }
+.movie-detail{
+  .header{
+    top: 10px;
+    margin-left: 10px;
+    font-family: verdana;
+    color: #0480be;
+    text-decoration: underline;
+  }
+
+  .movie-content{
+    position: relative;
+    left: 10px;
+    margin-right: 10px;
+  }
+  .movie-footer{
+    left: 10px;
+    position: relative;
+    margin-right: 10px;
+  }
+}
+
+.bacon{
+  input{
+    width: 180px;
+  }
+}
+

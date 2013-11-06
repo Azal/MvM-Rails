@@ -1,9 +1,0 @@
-<div class="movies-display">
-   <div class="movie-show">
-     <% count = 0 %>
-        <% @movies.each do |movie| %>
-            <%= link_to "Movie_#{count}", :action => 'detail', :id => movie[:_id] %><br>
-            <% count = count + 1%>
-        <% end %>
-   </div>
-</div>

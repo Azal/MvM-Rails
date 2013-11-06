@@ -1,4 +1,12 @@
 MvM::Application.routes.draw do
+
+  root to: 'movies#movies'
+
+  get 'movies', to: 'movies#movies'
+  get 'movies/search/', to: 'movies#search'
+  get 'movies/search/detail/:id', to: 'movies#detail'
+  get 'movies/bacon', to:'movies#bacon'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -56,7 +64,5 @@ MvM::Application.routes.draw do
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
 
-  get 'movies', to: 'movies#movies'
-  get 'movies/search/', to: 'movies#search'
-  get 'movies/search/detail/:id', to: 'movies#detail'
+
 end

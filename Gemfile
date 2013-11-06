@@ -11,6 +11,7 @@ gem 'mongoid', '2.4.6'
 gem 'kaminari'
 gem 'bootstrap-kaminari-views'
 gem 'twitter-bootstrap-rails'
+gem 'httparty'
 
 
 

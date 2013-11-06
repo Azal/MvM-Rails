@@ -15,18 +15,18 @@
                             <div class="browse-img">
                                 <% if movie[:From] == 'IMDB' %>
                                     <%= link_to image_tag(movie[:ImageIMDB]),
-                                                'detail', :title => movie[:SynopsisIMDB].truncate(200, :omission => "... (continued)"),
-                                                :class => "hint" %>
+                                                {:action => 'detail', :id => movie[:_id]} , :title => movie[:SynopsisIMDB].truncate(200, :omission => "... (continued)"),
+                                                                                            :class => "hint" %>
                                 <% else %>
                                     <%= link_to image_tag(movie[:ImageRotten]),
-                                                'detail', :title => movie[:SynopsisRotten].truncate(200, :omission => "... (continued)"),
-                                                :class => "hint" %>
+                                                {:action => 'detail', :id => movie[:_id]}, :title => movie[:SynopsisRotten].truncate(200, :omission => "... (continued)"),
+                                                                                           :class => "hint" %>
                                 <% end %>
                             </div>
                             <div class="browse-info">
 							<span class="info">
 
-								<span class="browseTitleLink"><%= link_to movie[:Title] + " (" + (movie[:Year]).to_s + ")" , 'detail' %></span><br>
+								<span class="browseTitleLink"><%= link_to movie[:Title] + " (" + (movie[:Year]).to_s + ")" , {:action => 'detail', :id => movie[:_id]} %></span><br>
 								<span class="browseInfoList"><b>Genre:</b> <%=  movie[:Genres].to_sentence %></span><br>
                               <% if movie[:From] == 'IMDB' %>
 								<span class="browseInfoList"><b>IMDB Rating:</b> <%=  movie[:RatingIMDB] %> </span>
@@ -39,8 +39,8 @@
 							</span>
                             </div>
                         </div>
-                    </div>
-                    <% count = count - 1%>
+                  </div>
+                  <% count = count - 1%>
                     <% if count == 0%>
                         <% count = 3 %>
                     <% end %>
