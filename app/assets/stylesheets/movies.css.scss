@@ -5,9 +5,11 @@
 .movie-search
 {
   position: absolute;
-  left: 50%;
-  margin-left: -600px;
-  width: 1200px;
+  left: 22%;
+  //margin-left: -600px;
+  //margin-left: 22%;
+  //width: 1200px;
+  width: 75%;
   background: #f9f9f9;
   padding: 5px;
   -webkit-border-radius: 5px;
@@ -65,7 +67,9 @@
 
 .bacon{
   input{
-    width: 180px;
+    //width: 180px;
+    width: 91%;
+
   }
 }
 

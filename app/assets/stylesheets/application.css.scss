@@ -12,6 +12,12 @@
  *= require_tree .
  *= require bootstrap_and_overrides
  */
+html {
+  font-size: 62.5%; /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
+  overflow-y: scroll; /* Keeps page centred in all browsers regardless of content height */
+  -webkit-text-size-adjust: 100%; /* Keeps page centred in all browsers regardless of content height */
+  -ms-text-size-adjust: 100%; /* Keeps page centred in all browsers regardless of content height */
+}
 
 body {
 
@@ -60,9 +66,9 @@ border: 5px solid green;
 }
 
 .content {
-width: 950px;
-margin: 0 auto;
-margin-top: 20px;
+width: 90%;
+margin-left: 22%;
+//margin-top: 3%;
 z-index: 10;
 position: relative;
 }
@@ -70,7 +76,9 @@ position: relative;
 .browse-img {
 float: left;
 width: 120px;
+//width: 100%;
 height: 192px;
+//  height: 100%;
 margin-right: 8px;
 }
 
@@ -111,15 +119,16 @@ div[class="tooltip-inner"] {
 
 .search-form{
   position: relative;
-  top: 20px;
-  width: 800px;
-  margin-left: -400px;
-  left: 50%;
+  //top: 20px;
+  //width: 800px;
+  width: 80%;
+  margin-top: 2%;
+  left: 22%;
   input{
-    width: 600px;
+    width: 72%;
   }
   select{
-    width: 80px;
+    width: 10%;
   }
 }
 .side-menu{
@@ -128,11 +137,15 @@ div[class="tooltip-inner"] {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  width: 200px;
-  height: 500px;
+  //width: 200px;
+  //height: 500px;
+  width: 18%;
+  height: 70%;
   position: absolute;
-  top: 120px;
-  left: 30px;
+  top: 12%;
+  left: 1%;
+  margin-top: 1%;
+  //left: 30px;
   border: 5px solid green;
   p{
     font-family: impact;
@@ -144,10 +157,11 @@ div[class="tooltip-inner"] {
 }
 .logo1{
   position: absolute;
-  top: 5px;
-  left: 0;
-  width: 300px;
-  height: 50px;
+  top: 2%;
+  left: 1%;
+  width: 19%;
+  height: 3%;
+
 }
 
 .logo2{
@@ -157,4 +171,23 @@ div[class="tooltip-inner"] {
   width: 70px;
   height: 70px;
 }
+
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.5em;
+}
+
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.5em;
+}
+
+.aligncenter {
+  clear: both;
+  display: block;
+  margin: 0 auto;
+}
+
 
