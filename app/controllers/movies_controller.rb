@@ -1,7 +1,7 @@
 class MoviesController < ApplicationController
 
-
   require 'httparty'
+  require 'Movie'
 
   before_filter :count_imdb
   before_filter :count_rotten

@@ -56,6 +56,11 @@
       <div class="movie-footer">
         <p align="justify"> <strong> Genres: </strong> <span style="font-style: italic"><%= @movie[:Genres].to_sentence %></span></p>
         <p align="justify"><strong> Cast: </strong> <span style="font-style: italic"> <%= @movie[:Cast].to_sentence %> </span></p>
+
+ 
+
+<div class="fb-like" data-href="<%=  request.original_url %>" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+
       </div>
     </div>
   </div>
