@@ -14,7 +14,10 @@
 <%@friends = @graph2.get_connections("me", "friends")%>
 <%=@friends%>
 <%end%>
-<%= link_to 'Login', Koala::Facebook::OAuth.new.url_for_oauth_code(:callback => "https://www.facebook.com/appcenter/252693051549440?preview=1&locale=es_LA") %>
+
+<%ccallback="http://rocky-mountain-1051.herokuapp.com/oauth_redirect_url"%>
+
+<%= link_to 'Login', Koala::Facebook::OAuth.new.url_for_oauth_code(:callback => ccallback) %>
 
     <div class="search-form">
         <%= form_tag({:controller => 'movies', :action => 'search'},
