@@ -2,12 +2,13 @@
 <div class = "content">
   <div class = "full-width">
     <div class="movie-detail">
-      <div class="header">
-         <h3> <%= "#{@movie[:Title]} (#{@movie[:Year]})" %> </h3>
+      <div class="header detail">
+         <h3> <%= "#{@movie[:Title]} (#{@movie[:Year]})  " %>    <a href=<%=@oauth%> class="btn btn-success "><i class="icon-white icon-star"></i> Share in Facebook</a></h3>
+
       </div>
 
       <% if @movie[:From] == 'IMDB' %>
-        <%= image_tag(@movie[:ImageIMDB],:align => 'left') %>
+        <%= image_tag(@movie[:ImageIMDB],:align => 'left', alt: "#{@movie[:Title]} Cover", class: 'movie-picture') %>
           <div class="movie-content">
             <h5>Synopsis:</h5>
             <p align="justify"><%= @movie[:SynopsisIMDB] %></p>
@@ -17,7 +18,7 @@
             </p>
           </div>
       <% elsif @movie[:From] == 'Rotten' %>
-          <%= image_tag(@movie[:ImageRotten], :align => 'left') %>
+          <%= image_tag(@movie[:ImageRotten], :align => 'left', alt: "#{@movie[:Title]} Cover", class: 'movie-picture') %>
 
           <div class="movie-content">
             <h5>Synopsis:</h5>
@@ -30,7 +31,7 @@
 
           </div>
       <% else %>
-          <%= image_tag(@movie[:ImageIMDB], :align => 'left') %>
+          <%= image_tag(@movie[:ImageIMDB], :align => 'left', alt: "#{@movie[:Title]} Cover", class: 'movie-picture') %>
 
           <div class="movie-content">
             <h5>Synopsis:</h5>

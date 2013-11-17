@@ -43,6 +43,15 @@ class MoviesController < ApplicationController
 
   def detail
     @movie = Movie.find(params[:id])
+    if !@oauth_code
+      callback="#{root_url}oauth_redirect_url"
+      @oauth=Koala::Facebook::OAuth.new.url_for_oauth_code(:callback => callback, :permissions => "publish_stream")
+    else
+      @graph2 = Koala::Facebook::API.new(@oauth_code)
+      #@friends = @graph2.get_connections("me", "friends")
+      @graph2.put_wall_post("Hey guys I want to share this movie with you at ")
+
+    end
   end
 
   def count_imdb
