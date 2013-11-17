@@ -3,14 +3,16 @@
   <div class = "full-width">
     <div class="movie-detail">
       <div class="header detail">
-         <h3> <%= "#{@movie[:Title]} (#{@movie[:Year]})  " %> </h3>
+         <h3> <%= "#{@movie[:Title]} (#{@movie[:Year]})  " %>
+          <div class="fb-share-button" data-href="<%=  request.original_url %>" data-type="button_count"></div>
+         </h3>
 
-         <div class="fb-share-button" data-href="<%=  request.original_url %>" data-type="button_count"></div>
+
 
       </div>
 
       <% if @movie[:From] == 'IMDB' %>
-        <%= image_tag(@movie[:ImageIMDB],:align => 'left', alt: "#{@movie[:Title]} Cover", class: 'movie-picture') %>
+        <%= image_tag("#{@movie[:_id].to_s}.jpg",:align => 'left', alt: "#{@movie[:Title]} Cover", class: 'movie-picture') %>
           <div class="movie-content">
             <h5>Synopsis:</h5>
             <p align="justify"><%= @movie[:SynopsisIMDB] %></p>
@@ -32,7 +34,7 @@
 
           </div>
       <% else %>
-          <%= image_tag(@movie[:ImageIMDB], :align => 'left', alt: "#{@movie[:Title]} Cover", class: 'movie-picture') %>
+          <%= image_tag(@movie[:ImageRotten], :align => 'left', alt: "#{@movie[:Title]} Cover", class: 'movie-picture') %>
 
           <div class="movie-content">
             <h5>Synopsis:</h5>
