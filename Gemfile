@@ -12,7 +12,14 @@ gem 'kaminari'
 gem 'bootstrap-kaminari-views'
 gem 'twitter-bootstrap-rails'
 gem 'httparty'
-gem 'koala'
+
+gem "mechanize"
+
+group :development do
+  gem "better_errors"
+  gem "binding_of_caller"
+end
+
 
 
 
