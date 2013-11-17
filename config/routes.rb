@@ -5,7 +5,6 @@ MvM::Application.routes.draw do
   get 'movies', to: 'movies#movies'
   get 'movies/search/', to: 'movies#search'
   get 'movies/search/detail/:id', to: 'movies#detail'
-  get 'movies/search/detail/:id/:share', to: 'movies#detail'
   get 'movies/bacon', to:'movies#bacon'
   match 'oauth_redirect_url' => 'oauth#redirect'
 

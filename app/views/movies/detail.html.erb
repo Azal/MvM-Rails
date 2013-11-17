@@ -3,15 +3,7 @@
   <div class = "full-width">
     <div class="movie-detail">
       <div class="header detail">
-         <h3> <%= "#{@movie[:Title]} (#{@movie[:Year]})  " %>
-           <%if !@oauth_code%>
-            <a href=<%=@oauth%> class="btn btn-success "><i class="icon-white icon-user"></i> Login with Facebook</a></h3>
-         <%elsif !@shared%>
-               <a href=<%="#{root_url}movies/search/detail/#{@movie[:_id]}?share=#{root_url}movies/search/detail/#{@movie[:_id]}"%>  class="btn btn-success "><i class="icon-white icon-star"></i> Share in Facebook</a></h3>
-           <%else%>
-               <div class="btn btn-success disabled"> Shared in Facebook <i class="icon-white icon-ok"></i></div></h3>
-           <%end%>
-
+         <h3> <%= "#{@movie[:Title]} (#{@movie[:Year]})  " %> </h3>
       </div>
 
       <% if @movie[:From] == 'IMDB' %>
@@ -60,6 +52,8 @@
  
 
 <div class="fb-like" data-href="<%=  request.original_url %>" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+
+<div class="fb-share-button" data-href="<%=  request.original_url %>" data-type="button_count"></div>
 
       </div>
     </div>
