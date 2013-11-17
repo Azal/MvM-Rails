@@ -6,6 +6,8 @@ MvM::Application.routes.draw do
   get 'movies/search/', to: 'movies#search'
   get 'movies/search/detail/:id', to: 'movies#detail'
   get 'movies/bacon', to:'movies#bacon'
+  match 'oauth_redirect_url' => 'OAuthController#redirect'
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

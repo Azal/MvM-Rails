@@ -9,6 +9,13 @@
 </head>
 
 <body>
+<%ccallback="http://rocky-mountain-1051.herokuapp.com/oauth_redirect_url"%>
+<%outh_code session[:access_token]%>
+<%@graph2 = Koala::Facebook::GraphAPI.new(oauth_code)%>
+<%@friends = @graph2.get_connections("me", "friends")%>
+<%=@friends.count()%>
+<%= link_to 'Login', Koala::Facebook::OAuth.new.url_for_oauth_code(:callback => ccallback) %>
+
     <div class="search-form">
         <%= form_tag({:controller => 'movies', :action => 'search'},
                      {:id => 'form_search', :method => :get}) do %>
