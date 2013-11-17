@@ -17,8 +17,8 @@
 <%end%>
 
 <%ccallback="http://rocky-mountain-1051.herokuapp.com/oauth_redirect_url"%>
-<%@oauth=Koala::Facebook::OAuth.new.url_for_oauth_code(:callback => ccallback)%>
-<%= link_to 'Login', @oauth.url_for_oauth_code(:permissions => "publish_stream") %>
+<%@oauth=Koala::Facebook::OAuth.new.url_for_oauth_code(:callback => ccallback, :permissions => "publish_stream")%>
+<%= link_to 'Login', @oauth %>
 
     <div class="search-form">
         <%= form_tag({:controller => 'movies', :action => 'search'},
