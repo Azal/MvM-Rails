@@ -4,6 +4,9 @@
     <div class="movie-detail">
       <div class="header detail">
          <h3> <%= "#{@movie[:Title]} (#{@movie[:Year]})  " %> </h3>
+
+         <div class="fb-share-button" data-href="<%=  request.original_url %>" data-type="button_count"></div>
+
       </div>
 
       <% if @movie[:From] == 'IMDB' %>
@@ -22,7 +25,6 @@
           <div class="movie-content">
             <h5>Synopsis:</h5>
             <p align="justify"><%= @movie[:SynopsisRotten] %></p>
-            <%= @movie[:RatingRotten] %>
             <p>
                 <Strong>Rating: <span style="color: red"> <%= @movie[:RatingRotten] %></span></Strong>
                 <a class="link" href= <%= @movie[:UrlRotten] %> ><%= image_tag('rt.jpg', width: 80, height: 80) %></a>
@@ -35,7 +37,6 @@
           <div class="movie-content">
             <h5>Synopsis:</h5>
             <p align="justify"><%= @movie[:SynopsisRotten] %></p>
-            <%= @movie[:RatingRotten] %>
             <p>
               <Strong> Rotten: <span style="color: red"> <%= @movie[:RatingRotten] %></span></Strong>
               <a class="link" href= <%= @movie[:UrlRotten] %> ><%= image_tag('rt.jpg', width: 80, height: 80) %></a>
@@ -52,8 +53,6 @@
  
 
 <div class="fb-like" data-href="<%=  request.original_url %>" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
-
-<div class="fb-share-button" data-href="<%=  request.original_url %>" data-type="button_count"></div>
 
       </div>
     </div>

@@ -13,6 +13,7 @@ gem 'bootstrap-kaminari-views'
 gem 'twitter-bootstrap-rails'
 gem 'httparty'
 gem 'koala'
+gem "mechanize", "~> 2.7.3"
 
 group :development do
   gem "better_errors"
