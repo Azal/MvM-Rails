@@ -54,13 +54,4 @@ class MoviesController < ApplicationController
   def count_both
     @count_both = Movie.where(:From => 'Both').count()
   end
-
-  def facebook_cookies
-    @facebook_cookies ||= Koala::Facebook::OAuth.new(Facebook::APP_ID.to_s, Facebook::SECRET.to_s).get_user_info_from_cookie(cookies)
-  end
-
-  def index
-    @access_token = @facebook_cookies["access_token"]
-    @graph = Koala::Facebook::GraphAPI.new(@access_token)
-  end
 end

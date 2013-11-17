@@ -9,12 +9,25 @@
 </head>
 
 <body>
+<<<<<<< HEAD
 <%ccallback="http://rocky-mountain-1051.herokuapp.com/oauth_redirect_url"%>
 <%outh_code session[:access_token]%>
 <%@graph2 = Koala::Facebook::GraphAPI.new(oauth_code)%>
 <%@friends = @graph2.get_connections("me", "friends")%>
 <%=@friends.count()%>
 <%= link_to 'Login', Koala::Facebook::OAuth.new.url_for_oauth_code(:callback => ccallback) %>
+=======
+  <%if @oauth_code%>
+  <%@graph2 = Koala::Facebook::API.new(@oauth_code)%>
+<%@friends = @graph2.get_connections("me", "friends")%>
+<%=@friends%>
+<%@graph2.put_wall_post("hey, i'm learning koala")%>
+<%end%>
+
+<%ccallback="http://rocky-mountain-1051.herokuapp.com/oauth_redirect_url"%>
+<%@oauth=Koala::Facebook::OAuth.new.url_for_oauth_code(:callback => ccallback, :permissions => "publish_stream")%>
+<%= link_to 'Login', @oauth %>
+>>>>>>> cffec32a3c50fac9b41c99ede1c9e062fc0411fe
 
     <div class="search-form">
         <%= form_tag({:controller => 'movies', :action => 'search'},
