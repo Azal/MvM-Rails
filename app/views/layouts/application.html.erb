@@ -13,11 +13,12 @@
   <%@graph2 = Koala::Facebook::API.new(@oauth_code)%>
 <%@friends = @graph2.get_connections("me", "friends")%>
 <%=@friends%>
+<%@graph2.put_wall_post("hey, i'm learning koala")%>
 <%end%>
 
 <%ccallback="http://rocky-mountain-1051.herokuapp.com/oauth_redirect_url"%>
-
-<%= link_to 'Login', Koala::Facebook::OAuth.new.url_for_oauth_code(:callback => ccallback) %>
+<%@oauth=Koala::Facebook::OAuth.new.url_for_oauth_code(:callback => ccallback)%>
+<%= link_to 'Login', @oauth.url_for_oauth_code(:permissions => "publish_stream") %>
 
     <div class="search-form">
         <%= form_tag({:controller => 'movies', :action => 'search'},
