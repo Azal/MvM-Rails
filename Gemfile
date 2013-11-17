@@ -12,6 +12,7 @@ gem 'kaminari'
 gem 'bootstrap-kaminari-views'
 gem 'twitter-bootstrap-rails'
 gem 'httparty'
+gem 'koala'
 
 
 

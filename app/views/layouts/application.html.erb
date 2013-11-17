@@ -9,6 +9,12 @@
 </head>
 
 <body>
+  
+  <%@graph2 = Koala::Facebook::GraphAPI.new(@oauth_code)%>
+<%@friends = @graph2.get_connections("me", "friends")%>
+<%=@friends.count()%>
+<%= link_to 'Login', Koala::Facebook::OAuth.new.url_for_oauth_code(:callback => "https://www.facebook.com/appcenter/252693051549440?preview=1&locale=es_LA") %>
+
     <div class="search-form">
         <%= form_tag({:controller => 'movies', :action => 'search'},
                      {:id => 'form_search', :method => :get}) do %>
