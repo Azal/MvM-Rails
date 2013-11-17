@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <%if @oauth_code)%>
+  <%if @oauth_code%>
   <%@graph2 = Koala::Facebook::API.new(@oauth_code)%>
 <%@friends = @graph2.get_connections("me", "friends")%>
 <%=@friends%>
