@@ -3,6 +3,6 @@ class ApplicationController < ActionController::Base
   before_filter :oauth
 
 def oauth
-  @oauth_code session[:access_token]
+  @oauth_code=session[:access_token]
 end
 end
