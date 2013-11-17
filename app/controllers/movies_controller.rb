@@ -51,7 +51,7 @@ class MoviesController < ApplicationController
     if(@oauth_code&&params[:share])
       @graph = Koala::Facebook::API.new(@oauth_code)
       #@friends = @graph2.get_connections("me", "friends")
-      @graph.put_wall_post("Hey guys I want to share this movie with you at... #{params[:share]}")
+      @graph.put_wall_post("Hey guys I want to share this movie with you at MovieManiacs #{params[:share]}")
       @shared=true;
     end
   end
