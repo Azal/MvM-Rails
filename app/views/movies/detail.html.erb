@@ -3,7 +3,14 @@
   <div class = "full-width">
     <div class="movie-detail">
       <div class="header detail">
-         <h3> <%= "#{@movie[:Title]} (#{@movie[:Year]})  " %>    <a href=<%=@oauth%> class="btn btn-success "><i class="icon-white icon-star"></i> Share in Facebook</a></h3>
+         <h3> <%= "#{@movie[:Title]} (#{@movie[:Year]})  " %>
+           <%if !@oauth_code%>
+            <a href=<%=@oauth%> class="btn btn-success "><i class="icon-white icon-user"></i> Login with Facebook</a></h3>
+         <%elsif !@shared%>
+               <a href=<%="#{root_url}movies/search/detail/#{@movie[:_id]}?share=#{root_url}movies/search/detail/#{@movie[:_id]}"%>  class="btn btn-success "><i class="icon-white icon-star"></i> Share in Facebook</a></h3>
+           <%else%>
+           <class="btn btn-success "><i class="icon-white icon-start"></i> Shared in Facebook</h3>
+           <%end%>
 
       </div>
 

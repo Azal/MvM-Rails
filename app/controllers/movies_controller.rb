@@ -46,11 +46,13 @@ class MoviesController < ApplicationController
     if !@oauth_code
       callback="#{root_url}oauth_redirect_url"
       @oauth=Koala::Facebook::OAuth.new.url_for_oauth_code(:callback => callback, :permissions => "publish_stream")
-    else
-      @graph2 = Koala::Facebook::API.new(@oauth_code)
+      @shared=false;
+    end
+    if(@oauth_code&&params[:share])
+      @graph = Koala::Facebook::API.new(@oauth_code)
       #@friends = @graph2.get_connections("me", "friends")
-      @graph2.put_wall_post("Hey guys I want to share this movie with you at ")
-
+      @graph.put_wall_post("Hey guys I want to share this movie with you at... #{params[:share]}")
+      @shared=true;
     end
   end
 
