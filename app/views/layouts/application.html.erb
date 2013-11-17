@@ -9,10 +9,11 @@
 </head>
 
 <body>
-  
-  <%@graph2 = Koala::Facebook::GraphAPI.new(@oauth_code)%>
+  <%if @oauth_code)%>
+  <%@graph2 = Koala::Facebook::API.new(@oauth_code)%>
 <%@friends = @graph2.get_connections("me", "friends")%>
-<%=@friends.count()%>
+<%=@friends%>
+<%end%>
 <%= link_to 'Login', Koala::Facebook::OAuth.new.url_for_oauth_code(:callback => "https://www.facebook.com/appcenter/252693051549440?preview=1&locale=es_LA") %>
 
     <div class="search-form">
