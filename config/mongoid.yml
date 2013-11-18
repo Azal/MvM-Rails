@@ -1,12 +1,12 @@
 development:
-  host: arqui5.ing.puc.cl
-  port: 27017
+  host: arqui1.ing.puc.cl
+  port: 27030
   database: MovieManiacs
 
 # set these environment variables on your prod server
 production:
-  host: arqui5.ing.puc.cl #<%= ENV['MONGOID_HOST'] %>
-  port: 27017 #<%= ENV['MONGOID_PORT'] %>
+  host: arqui1.ing.puc.cl #<%= ENV['MONGOID_HOST'] %>
+  port: 27030 #<%= ENV['MONGOID_PORT'] %>
   # username:  #<%= ENV['MONGOID_USERNAME'] %>
   # password: <%= ENV['MONGOID_PASSWORD'] %>
   database: MovieManiacs #<%= ENV['MONGOID_DATABASE'] %>
