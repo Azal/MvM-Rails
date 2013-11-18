@@ -26,7 +26,7 @@ class MoviesController < ApplicationController
     end
     movies_limit = [movie_page.to_i*9 + 100, 200].max
 
-    @movies = Kaminari.paginate_array(Movie.all(conditions: {:Year => '2013'}, limit: movies_limit).to_a).page(params[:movie_page]).per(9)
+    @movies = Kaminari.paginate_array(Movie.all(limit: movies_limit).to_a).page(params[:movie_page]).per(9)
 
   end
 
