@@ -20,13 +20,13 @@ class MoviesController < ApplicationController
     end
 
     def movies
-      movie_page = 1
-    if params[:movie_page]
-      movie_page = params[:movie_page]
-    end
-    movies_limit = [movie_page.to_i*9 + 100, 200].max
-
-    @movies = Kaminari.paginate_array(Movie.all(limit: movies_limit).to_a).page(params[:movie_page]).per(9)
+      movie_page = params[:movie_page].to_i
+      unless params[:movie_page]
+        movie_page = 1
+      end
+      query = Array.new((movie_page-1)*9)
+      query = query.concat Movie.all_in().skip((movie_page - 1)*9).limit(10).to_a
+      @movies = Kaminari.paginate_array(query).page(params[:movie_page]).per(9)
 
   end
 
