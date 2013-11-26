@@ -2,10 +2,41 @@
 <html>
 <head>
   <title>MvM</title>
-  <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" %>
   <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
+  <%
+  p =  javascript_include_tag "application" 
+  d = p.gsub("<script src=", "").gsub(' type="text/javascript"></script>', "").lines
+  %>
   <%= csrf_meta_tags %>
+
+
+  <script type="text/javascript">
+
+ // Add a script element as a child of the body
+ function downloadJSAtOnload() {
+ var element = document.createElement("script");
+ element.src = "http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js";
+ document.body.appendChild(element);
+
+//normal ones
+  <% c  = 0 %>
+  <% d.each do |t| %>
+  var element<%= c.to_s %>  = document.createElement("script");
+  element<%= c.to_s %>.src =  <%= t.to_s.html_safe %>;
+  document.body.appendChild(element<%= c.to_s %>);
+  <% c += 1 %>
+  <% end %>
+
+ }
+
+ // Check for browser support of event handling capability
+ if (window.addEventListener)
+ window.addEventListener("load", downloadJSAtOnload, false);
+ else if (window.attachEvent)
+ window.attachEvent("onload", downloadJSAtOnload);
+ else window.onload = downloadJSAtOnload;
+</script>
+
 </head>
 
 <body>
