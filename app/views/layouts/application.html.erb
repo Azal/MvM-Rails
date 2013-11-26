@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>MvM</title>
+  <%= favicon_link_tag 'favicon.ico' %>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <% p =  javascript_include_tag "application" 
   d = p.gsub("<script src=", "").gsub(' type="text/javascript"></script>', "").lines  %>
