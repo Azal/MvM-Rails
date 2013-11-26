@@ -3,10 +3,8 @@
 <head>
   <title>MvM</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%
-  p =  javascript_include_tag "application" 
-  d = p.gsub("<script src=", "").gsub(' type="text/javascript"></script>', "").lines
-  %>
+  <% p =  javascript_include_tag "application" 
+  d = p.gsub("<script src=", "").gsub(' type="text/javascript"></script>', "").lines  %>
   <%= csrf_meta_tags %>
 
 
