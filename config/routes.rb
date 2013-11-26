@@ -1,5 +1,9 @@
 MvM::Application.routes.draw do
 
+  get "static/hello"
+
+  get "static/test"
+
   root to: 'movies#movies'
 
   get 'movies', to: 'movies#movies'

@@ -46,12 +46,12 @@ class MoviesController < ApplicationController
   end
 
   def count_imdb
-    @count_imdb = Movie.where(:From => 'IMDB').count()
+    @count_imdb = 2545 #Movie.where(:From => 'IMDB').count()
   end
   def count_rotten
-    @count_rotten = Movie.where(:From => 'Rotten').count()
+    @count_rotten = 3345 #Movie.where(:From => 'Rotten').count()
   end
   def count_both
-    @count_both = Movie.where(:From => 'Both').count()
+    @count_both = 4890 #Movie.where(:From => 'Both').count()
   end
 end
