@@ -54,4 +54,7 @@ class MoviesController < ApplicationController
     @movie = Movie.find(params[:id])
   end
 
+  def manual_expire
+      expire_page :action => :movies
+  end
 end
