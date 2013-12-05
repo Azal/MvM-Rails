@@ -1,6 +1,6 @@
 development:
   host: arqui4.ing.puc.cl
-  host: 127.0.0.1
+  #host: 127.0.0.1
   #port: 27030
   port: 27017
   database: MovieManiacs
