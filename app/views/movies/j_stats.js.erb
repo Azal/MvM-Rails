@@ -1,2 +1,2 @@
 $('.results-stats').remove();
-$('.server-stats').append('<div style="margin-top:10px" class="results-stats"> <span><strong> IMDB: <%= j @count_imdb.to_s %></strong></span><br> <span><strong>Rotten:</strong> <%= j @count_rotten.to_s %></span><br><span><strong>Both:</strong> <%= j @count_both.to_s %></span><br><span><strong>Total:</strong> <%= j @total.to_s %></span> </div>');
+$('.server-stats').append('<div style="margin-top:10px" class="results-stats"> <span><strong> IMDB: </strong><%= j @count_imdb.to_s %></span><br> <span><strong>Rotten:</strong> <%= j @count_rotten.to_s %></span><br><span><strong>Both:</strong> <%= j @count_both.to_s %></span><br><span><strong>Total:</strong> <%= j @total.to_s %></span> </div>');
