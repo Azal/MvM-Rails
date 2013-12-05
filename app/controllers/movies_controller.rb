@@ -2,7 +2,7 @@ class MoviesController < ApplicationController
 
   require 'httparty'
   require 'Movie'
-  caches_page :movies
+  caches_action :movies, cache_path: proc { |c| c.params.except(:_).merge(format: request.format)}
 
     def stats
       @count_both = Movie.where(:From => 'Both').count()
@@ -17,7 +17,6 @@ class MoviesController < ApplicationController
     end
 
     def bacon
-
       @actor1= params[:actor_1]
       @actor2= params[:actor_2]
 
