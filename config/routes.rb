@@ -4,7 +4,7 @@ MvM::Application.routes.draw do
   root to: 'movies#movies'
 
   get 'movies', to: 'movies#movies'
-  get 'movies/:movie_page', to: 'movies#movies'
+  get 'movies/page/:movie_page', to: 'movies#movies'
   get 'movies/search/', to: 'movies#search'
   get 'movies/search/detail/:id', to: 'movies#detail'
   get 'movies/bacon', to:'movies#bacon'
