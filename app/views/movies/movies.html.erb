@@ -15,10 +15,9 @@
                             <div class="browse-img">
        
                                 <% if movie[:From] == 'IMDB' %>
-                                    <% agent = Mechanize.new %>
-                                     <% link = movie[:ImageIMDB] %>
-                              
                                     <% if !File.exist?("#{Rails.root}/app/assets/images/#{movie[:_id].to_s}.jpg") %>
+                                      <% agent = Mechanize.new %>
+                                      <% link = movie[:ImageIMDB] %>
                                       <% agent.get(link).save( "#{Rails.root}/app/assets/images/#{movie[:_id].to_s}.jpg") %>
                                     <% end %>
 

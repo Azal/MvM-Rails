@@ -2,7 +2,7 @@ class MoviesController < ApplicationController
 
   require 'httparty'
   require 'Movie'
-
+  caches_page :movies
   before_filter :count_imdb
   before_filter :count_rotten
   before_filter :count_both
