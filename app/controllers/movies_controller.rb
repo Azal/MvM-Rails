@@ -3,9 +3,18 @@ class MoviesController < ApplicationController
   require 'httparty'
   require 'Movie'
   caches_page :movies
-  before_filter :count_imdb
-  before_filter :count_rotten
-  before_filter :count_both
+
+    def stats
+      @count_both = Movie.where(:From => 'Both').count()
+      @count_rotten = Movie.where(:From => 'Rotten').count()
+      @count_imdb = Movie.where(:From => 'IMDB').count()
+      @total = @count_imdb + @count_rotten + @count_both
+
+      respond_to do |format|
+        format.js {render 'j_stats'}
+      end
+
+    end
 
     def bacon
 
@@ -45,13 +54,4 @@ class MoviesController < ApplicationController
     @movie = Movie.find(params[:id])
   end
 
-  def count_imdb
-    @count_imdb = 2545 #Movie.where(:From => 'IMDB').count()
-  end
-  def count_rotten
-    @count_rotten = 3345 #Movie.where(:From => 'Rotten').count()
-  end
-  def count_both
-    @count_both = 4890 #Movie.where(:From => 'Both').count()
-  end
 end

@@ -85,14 +85,7 @@
       <%= link_to image_tag('logo1.png'), action: 'movies' %>
     </div>
     <div class="side-menu">
-        <div class="server-stats">
-          <p>Server Stats:</p>
-          <span> <strong>IMDB:</strong> <%= @count_imdb %></span><br>
-          <span><strong>Rotten:</strong> <%= @count_rotten %></span><br>
-          <span><strong>Both:</strong> <%= @count_both %></span><br>
-          <span><strong>Total:</strong> <%= @count_both + @count_rotten + @count_imdb %></span>
-        </div>
-      <hr>
+
         <div class="bacon" style="text-align:center">
           <p style="text-align:left"> Bacon: </p>
           <%= form_tag({:controller => 'movies', :action => 'bacon'}, remote: true, :method => :get) %>
@@ -100,6 +93,10 @@
           <input type="text" class="input" placeholder="Actor 2" name="actor_2">
           <input type="submit" class=" btn btn-success" value="Calculate Bacon">
         </div>
+      <div style="background-color: green; width: 100%; height: 1px" ></div>
+      <div class="server-stats">
+        <%= link_to 'Load Server Stats', controller: 'movies', action: 'stats', remote: true %>
+      </div>
     </div>
 
     <%= yield %>
