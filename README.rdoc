@@ -1,29 +1,17 @@
 == Welcome to Rails
 
-Rails is a web-application framework that includes everything needed to create
-database-backed web applications according to the Model-View-Control pattern.
+The objective of this project is that you designed, documented, and build a prototype of MovieManiacs (MvM), which is a portal that mixes movie information from from distributed sources.
+ 
+ MovieManiacs is a Web application that makes available to different users information related to movies (No TV). To do this, MvM runs crawling1 and scrapping2 of known Web sites that put related information, for example to the  less than IMDB (Internet Movie Data Base) 3 and other websites (at least 1) that Add reviews (eg. RottenTomatoes4) or any other type of information that enriches the data released by IMDB (eg. See (http://dir.yahoo.com/entertainment/movies and film /). The crawler must be written in Node.js as MovieManiacs seeks to integrate your product in the future with other company (EntertainmentGossip) whose crawling technology is also implemented in such platform that would facilitate their acquisition.
 
-This pattern splits the view (also called the presentation) into "dumb"
-templates that are primarily responsible for inserting pre-built data in between
-HTML tags. The model contains the "smart" domain objects (such as Account,
-Product, Person, Post) that holds all the business logic and knows how to
-persist themselves to a database. The controller handles the incoming requests
-(such as Save New Account, Update Product, Show Post) by manipulating the model
-and directing data to the view.
+ Once collected the info from IMDB and at least another Web site, this should presented in a coherent manner through a form5 portal implemented in Python (bonus) or some other language (except for PHP). I.e., the pages crawleadas from IMDB and any other source should be stored in a DB oriented documents such as MongoDB (mandatory) and to show the pages that are linked (e.g. They speak of the same film) from IMDB and other sites, together, at the same time (partial or completely). Additionally, you should calculate and show the Bacon6 number for each actor who appears on the page to be displayed in the portal MvM.
+ 
+ Is expected that MvM has a great acceptance in the public by what the application should be prepared to support a massive demand (approximately 4 million of) users a month, with 1,000 concurrent connections), guaranteed good times of response (2 seconds guaranteed at peak time for at least 90 percent of requests criticism), availability guaranteed at time of 99 percent, 24 x 7, and a peak rate of successful requests (successful requests) of 90 percent of critical applications. Required
 
-In Rails, the model is handled by what's called an object-relational mapping
-layer entitled Active Record. This layer allows you to present the data from
-database rows as objects and embellish these data objects with business logic
-methods. You can read more about Active Record in
-link:files/vendor/rails/activerecord/README.html.
+ In addition to evaluate a technique of sharding7 versus any other cache base technique of data as a strategy to improve the performance of the application. The crawler must be homework online8
 
-The controller and view are handled by the Action Pack, which handles both
-layers by its two parts: Action View and Action Controller. These two layers
-are bundled in a single package due to their heavy interdependence. This is
-unlike the relationship between the Active Record and Action Pack that is much
-more separate. Each of these packages can be used independently outside of
-Rails. You can read more about Action Pack in
-link:files/vendor/rails/actionpack/README.html.
+ . The team has 6 machines at your disposal and the software must be 
+ - efficient (resource consumption) and developed on a standard Linux platform:
 
 
 == Getting Started
